@@ -924,7 +924,7 @@ class MainWindow(QMainWindow):
             figure.subplots_adjust(hspace=0.375, left=0.15, right = 0.795, top=0.920, bottom=0.330)
             total_height = 2.0 + fig_height
             divider = make_axes_locatable(ax)
-            ax2 = divider.append_axes("bottom", size="20%", pad=0)
+            ax2 = divider.append_axes("bottom", size="20%", pad=0.1)
             ax.figure.add_axes(ax2)
             figure.add_axes(ax)
             
@@ -961,7 +961,7 @@ class MainWindow(QMainWindow):
 
             ax = figure.add_subplot(211)
             divider = make_axes_locatable(ax)
-            ax2 = divider.append_axes("bottom", size="20%", pad=0)
+            ax2 = divider.append_axes("bottom", size="20%", pad=0.1)
             ax.figure.add_axes(ax2)
             figure.add_axes(ax)
 
@@ -986,7 +986,7 @@ class MainWindow(QMainWindow):
 
             ax = figure.add_subplot(212)
             divider = make_axes_locatable(ax)
-            ax2 = divider.append_axes("bottom", size="20%", pad=0)
+            ax2 = divider.append_axes("bottom", size="20%", pad=0.1)
             ax.figure.add_axes(ax2)
             figure.add_axes(ax)
 
